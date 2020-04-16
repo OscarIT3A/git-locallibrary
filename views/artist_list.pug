@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  
+  ul
+    each val in artist_list
+      li #[strong #{val.name}]
+        p #{val.desc}
+    else
+      li There are no artists.
